@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aqiilah</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="img/3.png" class="logo">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tim">Tim</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-duotone fa-xmark"></i>
+                    </ul>
+                    <i class="fas fa-bars"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <H1>Hallo saya <span>Aqiilah</span></H1>
+                </div>
+            </div>
+        </div>
+        <!---====================ABOUT========================--->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/me.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1><br>
+                        <p>Saya Aqiilah bisa juga di panggil Qila,Saya anak pertama dari 3 bersaudara.<br>
+                        Saya bersal dari SMKN 65 Jakarta jurusan Rpl.</p>
+        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Ttgl')">Tempat tanggal lahir</p>
+                            <p class="tab-links" onclick="opentab('alamat')">Alamat</p>
+                            <p class="tab-links" onclick="opentab('project')">Project</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Ttgl">
+                            <ul>
+                                <li>Jakarta, 15 Februari 2006</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="alamat">
+                            <ul>
+                            <li>Otista III, Jl.Masjid no 25, Jakarta Timur</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="project">
+                            <ul>
+                             <li>Web Album Foto</li>
+                             <li>Web Pemesanan Tiket</li>
+                             <li>Web Portofolio</li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+<!-----------------------Tim---------------------------->
+<div id="tim">
+    <div class="container">
+        <h1>My Team</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="img/2.jpg">
+                <div class="layer">
+                   <h3>Fitri Aryani</h3>
+                   <p>fitri ini bisa dipanggil dengan nama Tia,Pipit, atau Pitri. Lahir di Jakarta pada 10 Juni 2006,<br>
+                     dia anak terakhir dari 2 bersaudara.Memiliki hobby membaca novel atau Au,suka jalan-jalan ke berbagai tempat.
+                  </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/1.jpg">
+                <div class="layer">
+                    <h3>Natasya Ramadhani</h3>
+                    <p>Natasya atau panggilan sayangnya bila di kelas yaitu Deck Aya, lahir di Jakarta 8 Seotember 2007. Hobi nya menjadi cosplayer dan suka 
+                        bermain Genshin.
+                   </p>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="img/jupar.jpg" >
+                <div class="layer">
+                    <h3>Muhammad Zufar</h3>
+                    <p>Bisa juga dipanggil jupar, lahir di Jakarta 10 Februari 2006. Pembawaannya santai dan juga friendly</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------CONTACT------------------------------->
+<div id="contact">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+                <div class="content"> 
+                <div class="col-3">
+                <a href="https://www.instagram.com/aqiila_h/?hl=en"><h3><i class="bx bxl-instagram">INSTA</i></h3></a>
+                </div>
+                
+                <div class="col-3">
+                <a href="https://www.wattpad.com/user/Qillna_"><h3><i class="bx bxl-wattpad">WATTPAD</i></h3></a>
+                </div>
+        
+                <div class="col-3">
+                <a href="https://twitter.com/LaaaQila  "><h3><i class="bx bxl-twitter">TWITTER</i></h3></a>
+                </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+        <!---Script about-->
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+
+
+    </body>
+</html>
